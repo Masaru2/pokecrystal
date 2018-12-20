@@ -49,7 +49,7 @@ CeladonCityTeacher2Script:
 	jumptextfaceplayer CeladonCityTeacher2Text
 
 CeladonCityLassScript:
-	jumptextfaceplayer CeladonCityLassText
+	jumptextfaceplayer CeladonCityLassText_Mobile
 
 CeladonCitySign:
 	jumptext CeladonCitySignText
@@ -159,7 +159,6 @@ CeladonCityTeacher2Text:
 	done
 
 CeladonCityLassText_Mobile:
-; unused
 	text "I love being"
 	line "surrounded by tall"
 	cont "buildings!"
@@ -178,6 +177,7 @@ CeladonCityLassText_Mobile:
 	done
 
 CeladonCityLassText:
+; unused
 	text "Looking at the"
 	line "ground while I was"
 
