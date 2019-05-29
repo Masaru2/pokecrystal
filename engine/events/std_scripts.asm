@@ -54,6 +54,7 @@ StdScripts::
 	dba HappinessCheckScript
 
 PokecenterNurseScript:
+	
 	opentext
 	checktime MORN
 	iftrue .morn
@@ -62,7 +63,7 @@ PokecenterNurseScript:
 	checktime NITE
 	iftrue .nite
 	jump .ok
-
+	
 .morn
 	checkevent EVENT_WELCOMED_TO_POKECOM_CENTER
 	iftrue .morn_comcenter

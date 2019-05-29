@@ -863,20 +863,23 @@ GoldenrodPokecomCenter1F_MapEvents:
 	warp_event  0, 15, POKECENTER_2F, 1
 
 	db 2 ; coord events
-	coord_event  3,  7, SCENE_DEFAULT, GoldenrodPokecomCenter1F_GSBallSceneLeft
-	coord_event  4,  7, SCENE_DEFAULT, GoldenrodPokecomCenter1F_GSBallSceneRight
+	coord_event  6, 15, SCENE_DEFAULT, GoldenrodPokecomCenter1F_GSBallSceneLeft
+	coord_event  7, 15, SCENE_DEFAULT, GoldenrodPokecomCenter1F_GSBallSceneRight
 
-	db 16 ; bg events
+	db 19 ; bg events
 	bg_event  2,  9, BGEVENT_READ, GoldenrodPokecomCenter1F_InfoSignScript
+    bg_event 24,  4, BGEVENT_RIGHT, GoldenrodPokecomCenter1F_NewsScript
     bg_event 24,  5, BGEVENT_RIGHT, GoldenrodPokecomCenter1F_NewsScript
 	bg_event 24,  6, BGEVENT_RIGHT, GoldenrodPokecomCenter1F_NewsScript
 	bg_event 24,  7, BGEVENT_RIGHT, GoldenrodPokecomCenter1F_NewsScript
+	bg_event 24,  8, BGEVENT_RIGHT, GoldenrodPokecomCenter1F_NewsScript
 	bg_event 24,  9, BGEVENT_RIGHT, GoldenrodPokecomCenter1F_NewsScript
 	bg_event 24, 10, BGEVENT_RIGHT, GoldenrodPokecomCenter1F_NewsScript
 	bg_event 25, 11, BGEVENT_UP, GoldenrodPokecomCenter1F_NewsScript
 	bg_event 26, 11, BGEVENT_UP, GoldenrodPokecomCenter1F_NewsScript
 	bg_event 27, 11, BGEVENT_UP, GoldenrodPokecomCenter1F_NewsScript
 	bg_event 28, 11, BGEVENT_UP, GoldenrodPokecomCenter1F_NewsScript
+	bg_event 29,  4, BGEVENT_LEFT, GoldenrodPokecomCenter1F_NewsScript
 	bg_event 29,  5, BGEVENT_LEFT, GoldenrodPokecomCenter1F_NewsScript
 	bg_event 29,  6, BGEVENT_LEFT, GoldenrodPokecomCenter1F_NewsScript
 	bg_event 29,  7, BGEVENT_LEFT, GoldenrodPokecomCenter1F_NewsScript
@@ -891,7 +894,7 @@ GoldenrodPokecomCenter1F_MapEvents:
 	object_event  3, 11, SPRITE_LASS, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, GoldenrodPokecenter1FLassScript, -1
 	object_event 11, 14, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, GoldenrodPokecenter1FPokefanF, -1
     object_event  0,  7, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_UP, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, GoldenrodPokecenter1FGrampsScript, -1
-    object_event 17,  9, SPRITE_LASS, SPRITEMOVEDATA_STANDING_UP, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, GoldenrodPokecenter1FLass2Script, -1
+    object_event 16,  9, SPRITE_LASS, SPRITEMOVEDATA_STANDING_UP, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, GoldenrodPokecenter1FLass2Script, -1
     object_event  8, 13, SPRITE_SUPER_NERD, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, GoldenrodPokecenter1FSuperNerdScript, -1
     object_event 23,  8, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, GoldenrodPokecenter1FYoungsterScript, -1
     object_event 21,  6, SPRITE_ROCKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, GoldenrodPokecenter1FRockerScript, -1

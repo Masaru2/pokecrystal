@@ -100,11 +100,11 @@ Function49f16:
 	jp .joy_loop
 
 MobileString1:
-	db   "めいしフォルダー"
-	next "あいさつ"
-	next "プロフィール"
-	next "せ<TTE>い"
-	next "もどる"
+	db   "FOLDER"
+	next "GREETS"
+	next "PROFILE"
+	next "LOG-IN"
+	next "QUIT"
 	db   "@"
 
 MobileStrings2:
