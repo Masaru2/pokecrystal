@@ -15,6 +15,7 @@ GoldenrodPokecomCenter1F_MapScripts:
 	db 0 ; callbacks
 
 GoldenrodPokecenter1FNurseScript:
+    setevent EVENT_WELCOMED_TO_POKECOM_CENTER
 	jumpstd pokecenternurse
 	    
 GoldenrodPokecomCenter1F_GSBallSceneLeft:
