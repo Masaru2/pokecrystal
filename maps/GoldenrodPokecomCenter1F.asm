@@ -145,7 +145,7 @@ GoldenrodPokecenter1FPokefanF:
 	writetext UnknownText_0x6252a
 	waitbutton
 	closetext
-; 	end
+ 	end
     
 MovementData_0x6105a:
 	step UP
