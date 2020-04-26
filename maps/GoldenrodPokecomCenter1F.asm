@@ -145,26 +145,7 @@ GoldenrodPokecenter1FPokefanF:
 	writetext UnknownText_0x6252a
 	waitbutton
 	closetext
-	end
-
-GoldenrodPokecenter1FMobileTradeNurse:
-    faceplayer
-    opentext
-    writetext UnknownText_0x61072
-    waitbutton
-    writetext UnknownText_0x610ce
-    yesorno
-    iffalse .NoTrade
-    writetext UnknownText_0x61111
-    waitbutton
-    closetext
-    end
-    
-.NoTrade
-    writetext UnknownText_0x61344
-    waitbutton
-    closetext
-    end
+; 	end
     
 MovementData_0x6105a:
 	step UP
@@ -659,7 +640,6 @@ UnknownText_0x61efa:
 	done
 
 UnknownText_0x61f48:
-    ;unused
 	text "The #COM CENTER"
 	line "will link with all"
 
@@ -888,7 +868,7 @@ GoldenrodPokecomCenter1F_MapEvents:
 	
 	db 11 ; object events
 	object_event  7,  7, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, GoldenrodPokecenter1FNurseScript, -1
-	object_event 16,  8, SPRITE_LINK_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, GoldenrodPokecenter1FMobileTradeNurse, -1
+	object_event 16,  8, SPRITE_LINK_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
 	object_event 11, 12, SPRITE_GAMEBOY_KID, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, GoldenrodPokecenter1FGameboyKidScript, -1
 	object_event  3, 11, SPRITE_LASS, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, GoldenrodPokecenter1FLassScript, -1
 	object_event 11, 14, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, GoldenrodPokecenter1FPokefanF, -1
