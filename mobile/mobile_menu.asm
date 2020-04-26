@@ -100,10 +100,10 @@ Function49f16:
 	jp .joy_loop
 
 MobileString1:
-	db   "FOLDER"
-	next "GREETS"
+	db   "CARD FOLDER"
+	next "GREETINGS"
 	next "PROFILE"
-	next "LOG-IN"
+	next "SETTINGS"
 	next "QUIT"
 	db   "@"
 
