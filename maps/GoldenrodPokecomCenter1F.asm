@@ -96,17 +96,10 @@ GoldenrodPokecenter1FLassScript:
 	jumptextfaceplayer GoldenrodPokecenter1FLassText
 	
 GoldenrodPokecenter1FGrampsScript:
-    faceplayer
-    opentext
-    writetext UnknownText_0x62173
-    waitbutton
-    writetext UnknownText_0x62222
-    waitbutton
-    closetext
-    end
+    jumptextfaceplayer UnknownText_0x62173
     
 GoldenrodPokecenter1FLass2Script:
-    jumptextfaceplayer UnknownText_0x61fc9
+    jumptextfaceplayer UnknownText_0x61dfd
 
 GoldenrodPokecenter1FSuperNerdScript:
     jumptextfaceplayer UnknownText_0x61c89
@@ -115,7 +108,7 @@ GoldenrodPokecenter1FYoungsterScript:
     jumptextfaceplayer UnknownText_0x61efa
     
 GoldenrodPokecenter1FRockerScript:
-    jumptextfaceplayer UnknownText_0x61f48
+    jumptextfaceplayer UnknownText_0x61fc9
 
 GoldenrodPokecenter1FPokefanF:
 	faceplayer
@@ -663,6 +656,7 @@ UnknownText_0x61efa:
 	done
 
 UnknownText_0x61f48:
+    ;unused
 	text "The #COM CENTER"
 	line "will link with all"
 
@@ -744,6 +738,7 @@ UnknownText_0x62173:
 	done
 
 UnknownText_0x62222:
+    ;unused
 	text "Just seeing all"
 	line "these new things"
 
