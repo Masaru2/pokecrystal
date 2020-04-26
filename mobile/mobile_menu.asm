@@ -13,14 +13,14 @@ Function49f16:
 	call MobileMenu_InitMenuBuffers
 	ld c, 12
 	call DelayFrames
-	hlcoord 4, 0
+	hlcoord 3, 0
 	ld b, 10
-	ld c, 10
+	ld c, 12
 	call Function48cdc
-	hlcoord 6, 2
+	hlcoord 5, 2 
 	ld de, MobileString1
 	call PlaceString
-	hlcoord 0, 12
+	hlcoord 0, 12 
 	ld b, 4
 	ld c, SCREEN_HEIGHT
 	call TextBox
@@ -95,7 +95,7 @@ Function49f16:
 	ld [hl], b
 	ld b, $a
 	ld c, $1
-	hlcoord 5, 1
+	hlcoord 4, 1
 	call ClearBox
 	jp .joy_loop
 
@@ -110,8 +110,8 @@ MobileString1:
 MobileStrings2:
 
 String_0x49fe9:
-	db   "めいし¯つくったり"
-	next "ほぞんしておける　フォルダーです@"
+	db   "Make a card and"
+	next "Save it to the folder@"
 
 String_0x4a004:
 	db   "モバイルたいせんや　じぶんのめいしで"
@@ -133,7 +133,7 @@ MobileMenu_InitMenuBuffers:
 	ld hl, w2DMenuCursorInitY
 	ld a, 2
 	ld [hli], a
-	ld a, 5 ; w2DMenuCursorInitX
+	ld a, 4 ; w2DMenuCursorInitX
 	ld [hli], a
 	ld a, 5 ; w2DMenuNumRows
 	ld [hli], a
