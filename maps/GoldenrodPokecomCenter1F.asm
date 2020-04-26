@@ -110,6 +110,9 @@ GoldenrodPokecenter1FYoungsterScript:
 GoldenrodPokecenter1FRockerScript:
     jumptextfaceplayer UnknownText_0x61fc9
 
+GoldenrodPokecenter1FTeacherScript:
+    jumptextfaceplayer UnknownText_0x61f48
+    
 GoldenrodPokecenter1FPokefanF:
 	faceplayer
 	opentext
@@ -883,7 +886,7 @@ GoldenrodPokecomCenter1F_MapEvents:
 	bg_event 29,  9, BGEVENT_LEFT, GoldenrodPokecomCenter1F_NewsScript
 	bg_event 29, 10, BGEVENT_LEFT, GoldenrodPokecomCenter1F_NewsScript
 	
-	db 10 ; object events
+	db 11 ; object events
 	object_event  7,  7, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, GoldenrodPokecenter1FNurseScript, -1
 	object_event 16,  8, SPRITE_LINK_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, GoldenrodPokecenter1FMobileTradeNurse, -1
 	object_event 11, 12, SPRITE_GAMEBOY_KID, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, GoldenrodPokecenter1FGameboyKidScript, -1
@@ -894,3 +897,4 @@ GoldenrodPokecomCenter1F_MapEvents:
     object_event  8, 13, SPRITE_SUPER_NERD, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, GoldenrodPokecenter1FSuperNerdScript, -1
     object_event 23,  8, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, GoldenrodPokecenter1FYoungsterScript, -1
     object_event 21,  6, SPRITE_ROCKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, GoldenrodPokecenter1FRockerScript, -1
+    object_event 27, 13, SPRITE_TEACHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, GoldenrodPokecenter1FTeacherScript, -1
