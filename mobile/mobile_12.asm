@@ -335,9 +335,9 @@ Function48304:
 	call LoadMenuHeader
 	ld hl, MenuHeader_0x48513
 	call LoadMenuHeader
-	hlcoord 10, 0
+	hlcoord 8, 0
 	ld b, $c
-	ld c, $8
+	ld c, $a
 	call Function48cdc
 	ld a, [wMenuCursorBuffer]
 	ld b, a
@@ -566,7 +566,7 @@ String_484ff: db "Girl@"
 
 MenuHeader_0x48504:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 10, 0, SCREEN_WIDTH - 1, SCREEN_HEIGHT - 1
+	menu_coords 8, 0, SCREEN_WIDTH - 1, SCREEN_HEIGHT - 1
 
 MenuHeader_0x48509:
 	db MENU_BACKUP_TILES ; flags
@@ -578,7 +578,7 @@ MenuHeader_0x4850e:
 
 MenuHeader_0x48513:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 11, 1, 18, 12
+	menu_coords 9, 1, 18, 12
 	dw MenuData_0x4851b
 	db 1 ; default option
 
@@ -593,53 +593,53 @@ Unknown_4851d:
 	db $2d, $ff
 
 Prefectures:
-Aichi:     db "あいちけん@"   ; Aichi
-Aomori:    db "あおもりけん@" ; Aomori
-Akita:     db "あきたけん@"   ; Akita
-Ishikawa:  db "いしかわけん@" ; Ishikawa
-Ibaraki:   db "いばらきけん@" ; Ibaraki
-Iwate:     db "いわてけん@"   ; Iwate
-Ehime:     db "えひめけん@"   ; Ehime
-Oita:      db "おおいたけん@" ; Oita
-Osakafu:   db "おおさかふ@"   ; Osakafu
-Okayama:   db "おかやまけん@" ; Okayama
-Okinawa:   db "おきなわけん@" ; Okinawa
-Kagawa:    db "かがわけん@"   ; Kagawa
-Kagoshima: db "かごしまけん@" ; Kagoshima
-Kanagawa:  db "かながわけん@" ; Kanagawa
-Gifu:      db "ぎふけん@"     ; Gifu
-Kyotofu:   db "きょうとふ@"   ; Kyotofu
-Kumamoto:  db "くまもとけん@" ; Kumamoto
-Gunma:     db "ぐんまけん@"   ; Gunma
-Kochi:     db "こうちけん@"   ; Kochi
-Saitama:   db "さいたまけん@" ; Saitama
-Saga:      db "さがけん@"     ; Saga
-Shiga:     db "しがけん@"     ; Shiga
-Shizuoka:  db "しずおかけん@" ; Shizuoka
-Shimane:   db "しまねけん@"   ; Shimane
-Chiba:     db "ちばけん@"     ; Chiba
-Tokyo:     db "とうきょうと@" ; Tokyo
-Tokushima: db "とくしまけん@" ; Tokushima
-Tochigi:   db "とちぎけん@"   ; Tochigi
-Tottori:   db "とっとりけん@" ; Tottori
-Toyama:    db "とやまけん@"   ; Toyama
-Nagasaki:  db "ながさきけん@" ; Nagasaki
-Nagano:    db "ながのけん@"   ; Nagano
-Naraken:   db "ならけん@"     ; Naraken
-Niigata:   db "にいがたけん@" ; Niigata
-Hyogo:     db "ひょうごけん@" ; Hyogo
-Hiroshima: db "ひろしまけん@" ; Hiroshima
-Fukui:     db "ふくいけん@"   ; Fukui
-Fukuoka:   db "ふくおかけん@" ; Fukuoka
-Fukushima: db "ふくしまけん@" ; Fukushima
-Hokkaido:  db "ほっかいどう@" ; Hokkaido
-Mie:       db "みえけん@"     ; Mie
-Miyagi:    db "みやぎけん@"   ; Miyagi
-Miyazaki:  db "みやざきけん@" ; Miyazaki
-Yamagata:  db "やまがたけん@" ; Yamagata
-Yamaguchi: db "やまぐちけん@" ; Yamaguchi
-Yamanashi: db "やまなしけん@" ; Yamanashi
-Wakayama:  db "わかやまけん@" ; Wakayama
+Aichi:     db "Aichi@"     ; Aichi
+Aomori:    db "Aomori@"    ; Aomori
+Akita:     db "Akita@"     ; Akita
+Ishikawa:  db "Ishikawa@"  ; Ishikawa
+Ibaraki:   db "Ibaraki@"   ; Ibaraki
+Iwate:     db "Iwate@"     ; Iwate
+Ehime:     db "Ehime@"     ; Ehime
+Oita:      db "Oita@"      ; Oita
+Osakafu:   db "Osakafu@"   ; Osakafu
+Okayama:   db "Okayama@"   ; Okayama
+Okinawa:   db "Okinawa@"   ; Okinawa
+Kagawa:    db "Kagawa@"    ; Kagawa
+Kagoshima: db "Kagoshima@" ; Kagoshima
+Kanagawa:  db "Kanagawa@"  ; Kanagawa
+Gifu:      db "Gifu@"      ; Gifu
+Kyotofu:   db "Kyotofu@"   ; Kyotofu
+Kumamoto:  db "Kumamoto@"  ; Kumamoto
+Gunma:     db "Gunma@"     ; Gunma
+Kochi:     db "Kochi@"     ; Kochi
+Saitama:   db "Saitama@"   ; Saitama
+Saga:      db "Saga@"      ; Saga
+Shiga:     db "Shiga@"     ; Shiga
+Shizuoka:  db "Shizuoka@"  ; Shizuoka
+Shimane:   db "Shimane@"   ; Shimane
+Chiba:     db "Chiba@"     ; Chiba
+Tokyo:     db "Tokyo@"     ; Tokyo
+Tokushima: db "Tokushima@" ; Tokushima
+Tochigi:   db "Tochigi@"   ; Tochigi
+Tottori:   db "Tottori@"   ; Tottori
+Toyama:    db "Toyama@"    ; Toyama
+Nagasaki:  db "Nagasaki@"  ; Nagasaki
+Nagano:    db "Nagano@"    ; Nagano
+Naraken:   db "Naraken@"   ; Naraken
+Niigata:   db "Niigata@"   ; Niigata
+Hyogo:     db "Hyogo@"     ; Hyogo
+Hiroshima: db "Hiroshima@" ; Hiroshima
+Fukui:     db "Fukui@"     ; Fukui
+Fukuoka:   db "Fukuoka@"   ; Fukuoka
+Fukushima: db "Fukushima@" ; Fukushima
+Hokkaido:  db "Hokkaido@"  ; Hokkaido
+Mie:       db "Mie@"       ; Mie
+Miyagi:    db "Miyagi@"    ; Miyagi
+Miyazaki:  db "Miyazaki@"  ; Miyazaki
+Yamagata:  db "Yamagata@"  ; Yamagata
+Yamaguchi: db "Yamaguchi@" ; Yamaguchi
+Yamanashi: db "Yamanashi@" ; Yamanashi
+Wakayama:  db "Wakayama@"  ; Wakayama
 
 Function48689:
 	ld c, 7
@@ -648,7 +648,7 @@ Function48689:
 	call GetMysteryGift_MobileAdapterLayout
 	call ClearBGPalettes
 	hlcoord 0, 0
-	ld b, 4
+	ld b, 6
 	ld c, SCREEN_WIDTH
 	call ClearBox
 	hlcoord 0, 2
@@ -1209,15 +1209,15 @@ Function48a3a:
 	call Function4873c
 	ld a, $a
 	ld [w2DMenuCursorInitY], a
-	ld a, $b
+	ld a, $8
 	ld [w2DMenuCursorInitX], a
 	ld a, $1
 	ld [wMenuCursorY], a
-	hlcoord 10, 8
+	hlcoord 7, 8
 	ld b, $4
-	ld c, $8
+	ld c, $b
 	call Function48cdc
-	hlcoord 12, 10
+	hlcoord 9, 10
 	ld de, String_48aa1
 	call PlaceString
 	call StaticMenuJoypad
@@ -1251,7 +1251,7 @@ Function48a9a:
 
 MenuHeader_0x48a9c:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 10, 8, SCREEN_WIDTH - 1, 13
+	menu_coords 7, 8, SCREEN_WIDTH - 1, 13
 
 String_48aa1:
 	db   "Tell Now"

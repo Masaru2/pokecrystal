@@ -110,8 +110,8 @@ MobileString1:
 MobileStrings2:
 
 String_0x49fe9:
-	db   "Make a card and"
-	next "Save it to the folder@"
+	db   "Store a CARD into"
+	next "the FOLDER@"
 
 String_0x4a004:
 	db   "モバイルたいせんや　じぶんのめいしで"
@@ -474,8 +474,8 @@ DeletePassword_YesNo_MenuHeader:
 MenuData_0x4a36a:
 	db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING | STATICMENU_WRAP ; flags
 	db 2 ; items
-	db "はい@"
-	db "いいえ@"
+	db "YES@"
+	db "NO@"
 
 Function4a373:
 	ld hl, w2DMenuCursorInitY
