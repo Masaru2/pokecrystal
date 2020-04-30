@@ -110,24 +110,24 @@ MobileString1:
 MobileStrings2:
 
 String_0x49fe9:
-	db   "Store a CARD into"
-	next "the FOLDER@"
+	db   "Create and store"
+	next "TRAINER CARDS@"
 
 String_0x4a004:
-	db   "モバイルたいせんや　じぶんのめいしで"
-	next "つかう　あいさつ¯つくります@"
+	db   "Create greetings"
+	next "for matches@"
 
 String_0x4a026:
-	db   "あなた<NO>じゅうしょや　ねんれいの"
-	next "せ<TTE>い¯かえられます@"
+	db   "Change your"
+	next "address and age@"
 
 String_0x4a042:
-	db  "モバイルセンター<NI>せつぞくするとき"
-	next "ひつような　こと¯きめます@"
+	db  "MOBILE CENTER"
+	next "Settings@"
 
 String_0x4a062:
-	db   "まえ<NO>がめん　<NI>もどります"
-	next "@"
+	db   "Return to the"
+	next "previous screen@"
 
 MobileMenu_InitMenuBuffers:
 	ld hl, w2DMenuCursorInitY
@@ -331,7 +331,7 @@ asm_4a19d:
 String_4a1ef:
 	db   "モバイルセンター¯えらぶ"
 	next "ログインパスワード¯いれる"
-	next "もどる@"
+	next "QUIT@"
 
 Function4a20e:
 	ld a, $1
@@ -765,7 +765,7 @@ String_4a5da:
 String_4a5e6:
 	db "たいせん　<NI>まけたとき@"
 String_4a5f2:
-	db "もどる@"
+	db "QUIT@"
 
 Strings_4a5f6:
 	db "めいし　や　ニュース　<NI>のせる@"
