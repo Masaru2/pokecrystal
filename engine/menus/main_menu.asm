@@ -46,7 +46,7 @@ MainMenu:
 	db "OPTION@"
 	db "MYSTERY GIFT@"
 	db "MOBILE@"
-	db "MOBILE STUDIUM@"
+	db "MOBILE STADIUM@"
 
 .Jumptable:
 	dw MainMenu_Continue
