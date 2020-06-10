@@ -329,8 +329,8 @@ asm_4a19d:
 	jp Function4a195
 
 String_4a1ef:
-	db   "モバイルセンター¯えらぶ"
-	next "ログインパスワード¯いれる"
+	db   "MOBILE CENTER"
+	next "LOGIN PASSWORD"
 	next "QUIT@"
 
 Function4a20e:
@@ -359,15 +359,14 @@ Function4a239:
 	jp Function4a13b
 
 Strings_4a23d:
-	db   "いつも　せつぞく¯する"
-	next "モバイルセンター¯えらびます@"
+	db   "Connect to the"
+	next "MOBILE CENTER@"
 
-	db   "モバイルセンター<NI>せつぞくするとき"
-	next "つかうパスワード¯ほぞんできます@"
+	db   "You can save"
+	next "your password@"
 
-	db   "まえ<NO>がめん　<NI>もどります@"
-
-	db   "@"
+	db   "Return to the"
+	next "previous screen@"
 
 Function4a28a:
 	hlcoord 2, 3
@@ -451,9 +450,9 @@ MenuHeader_0x4a346:
 	menu_coords 12, 0, SCREEN_WIDTH - 1, 6
 
 String_4a34b:
-	db   "いれなおす"
-	next "けす"
-	next "もどる@"
+	db   "RESET"
+	next "DEL."
+	next "QUIT@"
 
 UnknownText_0x4a358:
 	; Delete the saved LOG-IN PASSWORD?
@@ -757,26 +756,27 @@ Function4a5b0:
 	jp Function4a545
 
 String_4a5c5:
-	db "じこしょうかい@"
+	db "PRESENTATION@"
 String_4a5cd:
-	db "たいせん　<GA>はじまるとき@"
+	db "BEFORE BATTLE@"
 String_4a5da:
-	db "たいせん　<NI>かったとき@"
+	db "WIN BATTLE@"
 String_4a5e6:
-	db "たいせん　<NI>まけたとき@"
+	db "LOSE BATTLE@"
 String_4a5f2:
 	db "QUIT@"
 
 Strings_4a5f6:
-	db "めいし　や　ニュース　<NI>のせる@"
-	db "あなた<NO>あいさつです@"
-	db "モバイル　たいせん<GA>はじまるとき@"
-	db "あいて<NI>みえる　あいさつです@"
-	db "モバイル　たいせんで　かったとき@"
-	db "あいて<NI>みえる　あいさつです@"
-	db "モバイル　たいせんで　まけたとき@"
-	db "あいて<NI>みえる　あいさつです@"
-	db "まえ<NO>がめん　<NI>もどります@"
+	db "It shows in your@"
+	db "TRAINER CARD@"
+	db "Your GREETING@"
+	db "before a battle@"
+	db "Your GREETING when@"
+	db "you win a battle@"
+	db "Your GREETING when@"
+	db "you lose a battle@"
+	db "Return to the"
+	next "previous screen@"
 	db "@"
 
 Function4a680:
