@@ -122,8 +122,8 @@ String_0x4a026:
 	next "address and age@"
 
 String_0x4a042:
-	db  "MOBILE CENTER"
-	next "Settings@"
+	db   "Adjustments for"
+	next "the MOBILE CENTER@"
 
 String_0x4a062:
 	db   "Return to the"
