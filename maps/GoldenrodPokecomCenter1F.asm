@@ -845,9 +845,8 @@ GoldenrodPokecomCenter1F_MapEvents:
 	coord_event  6, 15, SCENE_DEFAULT, GoldenrodPokecomCenter1F_GSBallSceneLeft
 	coord_event  7, 15, SCENE_DEFAULT, GoldenrodPokecomCenter1F_GSBallSceneRight
 
-	db 19 ; bg events
+	db 17 ; bg events
 	bg_event  2,  9, BGEVENT_READ, GoldenrodPokecomCenter1F_InfoSignScript
-    bg_event 24,  4, BGEVENT_RIGHT, GoldenrodPokecomCenter1F_NewsScript
     bg_event 24,  5, BGEVENT_RIGHT, GoldenrodPokecomCenter1F_NewsScript
 	bg_event 24,  6, BGEVENT_RIGHT, GoldenrodPokecomCenter1F_NewsScript
 	bg_event 24,  7, BGEVENT_RIGHT, GoldenrodPokecomCenter1F_NewsScript
@@ -858,7 +857,6 @@ GoldenrodPokecomCenter1F_MapEvents:
 	bg_event 26, 11, BGEVENT_UP, GoldenrodPokecomCenter1F_NewsScript
 	bg_event 27, 11, BGEVENT_UP, GoldenrodPokecomCenter1F_NewsScript
 	bg_event 28, 11, BGEVENT_UP, GoldenrodPokecomCenter1F_NewsScript
-	bg_event 29,  4, BGEVENT_LEFT, GoldenrodPokecomCenter1F_NewsScript
 	bg_event 29,  5, BGEVENT_LEFT, GoldenrodPokecomCenter1F_NewsScript
 	bg_event 29,  6, BGEVENT_LEFT, GoldenrodPokecomCenter1F_NewsScript
 	bg_event 29,  7, BGEVENT_LEFT, GoldenrodPokecomCenter1F_NewsScript
