@@ -760,9 +760,9 @@ String_4a5c5:
 String_4a5cd:
 	db "BEFORE BATTLE@"
 String_4a5da:
-	db "WIN BATTLE@"
+	db "VICTORY@"
 String_4a5e6:
-	db "LOSE BATTLE@"
+	db "LOSE@"
 String_4a5f2:
 	db "QUIT@"
 

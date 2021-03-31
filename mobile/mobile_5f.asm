@@ -4707,7 +4707,7 @@ Function17f6b7:
 	ret
 
 String_17f6dc:
-	db "つうしんエラー　　　ー@"
+	db "ERROR  　　　ー@"
 
 String_17f6e8:
 	db   "みていぎ<NO>エラーです"
@@ -4868,68 +4868,71 @@ Unknown_17f844: db 19
 	dbbw $ff, $ff, String_17fa49
 
 String_17f891:
-	db   "モバイルアダプタが　ただしく"
-	next "さしこまれていません"
-	next "とりあつかいせつめいしょを"
-	next "ごらんのうえ　しっかりと"
-	next "さしこんで　ください"
+	db   "The MOBILE ADAP-"
+	next "TER is not"
+	next "plugged in."
+	next "Look at the"
+	next "instructions and"
+	next "plug it properly"
 	db   "@"
 
 String_17f8d1:
-	db   "でんわが　うまく　かけられないか"
-	next "でんわかいせんが　こんでいるので"
-	next "つうしん　できません"
-	next "しばらく　まって"
-	next "かけなおして　ください"
+	db   "The phone line is"
+	next "busy right now."
+	next "Please wait for"
+	next "a while and"
+	next "try again."
 	db   "@"
 
 String_17f913:
-	db   "でんわかいせんが　こんでいるため"
-	next "でんわが　かけられません"
-	next "しばらく　まって"
-	next "かけなおして　ください"
+	db   "The phone line is"
+	next "full right now."
+	next "Please wait for"
+	next "a while and"
+	next "try again."
 	db   "@"
 
 String_17f946:
-	db   "モバイルアダプタの　エラーです"
-	next "しばらく　まって"
-	next "かけなおして　ください"
-	next "なおらない　ときは"
-	next "モバイルサポートセンターへ"
-	next "おといあわせください"
+	db   "There's an error in"
+	next "the MOBILE ADAPTER."
+	next "Please wait for"
+	next "a while and"
+	next "try again. if not,"
+	next "contact our support center."
 	db   "@"
 
 String_17f98e:
-	db   "つうしんエラーです"
-	next "しばらく　まって"
-	next "かけなおして　ください"
-	next "なおらない　ときは"
-	next "モバイルサポートセンターへ"
-	next "おといあわせください"
+	db   "There's a communication"
+	next "error. Please wait for"
+	next "a while and"
+	next "try again. if not"
+	next "contact our support"
+	next "center."
 	db   "@"
 
 String_17f9d0:
-	db   "ログインパスワードか"
-	next "ログイン　アイディーに"
-	next "まちがいがあります"
-	next "パスワードを　かくにんして"
-	next "しばらく　まって"
-	next "かけなおして　ください"
+	db   "There's a mistake in"
+	next "your LOG-IN PASSWORD"
+	next "or your LOGIN ID."
+	next "Please wait for"
+	next "a while and"
+	next "try again."
 	db   "@"
 
 String_17fa14:
-	db   "でんわが　きれました"
-	next "とりあつかいせつめいしょを"
-	next "ごらんのうえ"
-	next "しばらく　まって"
-	next "かけなおして　ください"
+	db   "Your phone has been"
+	next "disconnected."
+	next "Check the instruct-"
+	next "ions and call back"
+	next "in a few minutes."
 	db   "@"
 
 String_17fa49:
-	db   "モバイルセンターの"
-	next "つうしんエラーです"
-	next "しばらくまって"
-	next "かけなおして　ください"
+	db   "There's a MOBILE-"
+	next "CENTER error."
+	next "Please wait for"
+	next "a while and"
+	next "try again."
 	db   "@"
 
 String_17fa71:

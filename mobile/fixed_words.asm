@@ -707,14 +707,14 @@ Function11c4be:
 	ret
 
 String_11c4db:
-	db   "６つのことば¯くみあわせます"
-	next "かえたいところ¯えらぶと　でてくる"
-	next "ことばのグループから　いれかえたい"
-	next "たんご¯えらんでください"
+	db   "Choose six words"
+	next "you want to replace"
+	next "from the group of"
+	next "words that appears."
 	db   "@"
 
 String_11c51b:
-	db "ぜんぶけす　やめる　　　けってい@"
+	db "DEL.  CANCEL　　　END@"
 
 Function11c52c:
 	call EZChat_ClearBottom12Rows
