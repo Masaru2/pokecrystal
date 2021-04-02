@@ -1109,7 +1109,7 @@ Function17d711:
 	ld l, a
 	jp hl
 
-asm_17d721
+asm_17d721:
 	call Function17e5af
 	ld a, $2
 	ld [wcd77], a
@@ -4905,9 +4905,9 @@ String_17f98e:
 	db   "There's a communication"
 	next "error. Please wait for"
 	next "a while and"
-	next "try again. if not"
-	next "contact our support"
-	next "center."
+	next "try again. if not,"
+	next "contact our"
+	next "support center."
 	db   "@"
 
 String_17f9d0:
@@ -4920,160 +4920,170 @@ String_17f9d0:
 	db   "@"
 
 String_17fa14:
-	db   "Your phone has been"
-	next "disconnected."
+	db   "Your call has"
+	next "ended."
 	next "Check the instruct-"
-	next "ions and call back"
+	next "ions and try again"
 	next "in a few minutes."
 	db   "@"
 
 String_17fa49:
-	db   "There's a MOBILE-"
-	next "CENTER error."
+	db   "There's an error in"
+	next "the MOBILE CENTER."
 	next "Please wait for"
 	next "a while and"
 	next "try again."
 	db   "@"
 
 String_17fa71:
-	db   "モバイルアダプタに"
-	next "とうろくされた　じょうほうが"
-	next "ただしく　ありません"
-	next "モバイルトレーナーで"
-	next "しょきとうろくを　してください"
+	db   "The information"
+	next "registered was"
+	next "incorrect."
+	next "Please register with"
+	next "the MOBILE TRAINER."
 	db   "@"
 
 String_17fab0:
-	db   "モバイルセンターが"
-	next "こんでいて　つながりません"
-	next "しばらくまって"
-	next "かけなおして　ください"
-	next "くわしくは　とりあつかい"
-	next "せつめいしょを　ごらんください"
+	db   "The MOBILE CENTER"
+	next "is busy. Please"
+	next "wait for a while"
+	next "and try again. For"
+	next "more information, check"
+	next "the instructions."
 	db   "@"
 
 String_17faf9:
-	db   "あてさき　メールアドレスに"
-	next "まちがいがあります"
-	next "ただしい　メールアドレスを"
-	next "いれなおしてください"
+	db   "There's a mistake"
+	next "in your E-MAIL address."
+	next "Please enter a valid"
+	next "E-MAIL address."
 	db   "@"
 
 String_17fb2a:
-	db   "メールアドレスに"
-	next "まちがいが　あります"
-	next "とりあつかいせつめいしょを"
-	next "ごらんのうえ"
-	next "モバイルトレーナーで"
-	next "しょきとうろくを　してください"
+	db   "There's a mistake"
+	next "in your E-MAIL address."
+	next "Please check the"
+	next "instructions and"
+	next "Register with the"
+	next "MOBILE TRAINER."
 	db   "@"
 
 String_17fb6e:
-	db   "ログインパスワードに"
-	next "まちがいが　あるか"
-	next "モバイルセンターの　エラーです"
-	next "パスワードを　かくにんして"
-	next "しばらく　まって"
-	next "かけなおして　ください"
+	db   "There's either an error"
+	next "in the LOG-IN PASS-"
+	next "WORD or in the"
+	next "MOBILE CENTER"
+	next "Please confirm your"
+	next "password and try again."
 	db   "@"
 
 String_17fbb6:
-	db   "データの　よみこみが　できません"
-	next "しばらくまって"
-	next "かけなおして　ください"
-	next "なおらない　ときは"
-	next "モバイルサポートセンターへ"
-	next "おといあわせください"
+	db   "Can't read data."
+	next "Please wait for"
+	next "a while and try"
+	next "again. If not,"
+	next "contact our"
+	next "support center."
 	db   "@"
 
 String_17fbfe:
-	db   "じかんぎれです"
-	next "でんわが　きれました"
-	next "でんわを　かけなおしてください"
-	next "くわしくは　とりあつかい"
-	next "せつめいしょを　ごらんください"
+	db   "Out of time."
+	next "The call was ended."
+	next "Please try again."
+	next "For details, check"
+	next "the instructions."
 	db   "@"
 
 String_17fc3e:
-	db   "ごりよう　りょうきんの　"
-	next "おしはらいが　おくれたばあいには"
-	next "ごりようが　できなくなります"
-	next "くわしくは　とりあつかい"
-	next "せつめいしょを　ごらんください"
+	db   "This service can't "
+	next "be used if payments"
+	next "for usage fees are"
+	next "late. Please check"
+	next "the instructions."
 	db   "@"
 
 String_17fc88:
-	db   "おきゃくさまの　ごつごうにより"
-	next "ごりようできません"
-	next "くわしくは　とりあつかい"
-	next "せつめいしょを　ごらんください"
+	db   "Your access has"
+	next "been restricted."
+	next "Service can't be used."
+	next "For details, check"
+	next "the instructions"
 	db   "@"
 
 String_17fcbf:
-	db   "でんわかいせんが　こんでいるか"
-	next "モバイルセンターの　エラーで"
-	next "つうしんが　できません"
-	next "しばらく　まって"
-	next "かけなおして　ください"
+	db   "The line is busy"
+	next "Due to this error"
+	next "the MOBILE CENTER"
+	next "can't communicate."
+	next "Please try again"
+	next "in a few minutes."
 	db   "@"
 
 String_17fcff:
-	db   "ごりよう　りょうきんが"
-	next "じょうげんを　こえているため"
-	next "こんげつは　ごりようできません"
-	next "くわしくは　とりあつかい"
-	next "せつめいしょを　ごらんください"
+	db   "Service can't be"
+	next "used this month."
+	next "Usage fees has"
+	next "expired condition."
+	next "For details, check"
+	next "the instructions."
 	db   "@"
 
 String_17fd47:
-	db   "げんざい　モバイルセンターの"
-	next "てんけんを　しているので"
-	next "つうしんが　できません"
-	next "しばらく　まって"
-	next "かけなおして　ください"
+	db   "The MOBILE CENTER"
+	next "is currently"
+	next "under mantain-"
+	next "ance. Please"
+	next "wait for a while"
+	next "and try again."
 	db   "@"
 
 String_17fd84:
-	db   "データの　よみこみが　できません"
-	next "くわしくは　とりあつかい"
-	next "せつめいしょを　ごらんください"
+	db   "Can't read data."
+	next "For details, check"
+	next "the instructions."
 	db   "@"
 
 String_17fdb2:
-	db   "３ぷん　いじょう　なにも"
-	next "にゅうりょく　しなかったので"
-	next "でんわが　きれました"
+	db   "Call ended."
+	next "Because more than"
+	next "three minutes"
+	next "elapsed with no"
+	next "input."
 	db   "@"
 
 String_17fdd9:
-	db   "つうしんが　うまく"
-	next "できませんでした"
-	next "もういちど　はじめから"
-	next "やりなおしてください"
+	db   "Couldn't connect"
+	next "properly. Please"
+	next "try again from"
+	next "the start."
 	db   "@"
 
 String_17fe03:
-	db   "データの　よみこみが　できません"
-	next "しばらくまって"
-	next "かけなおして　ください"
-	next "なおらない　ときは"
-	next "モバイルサポートセンターへ"
-	next "おといあわせください"
+	db   "Can't read data."
+	next "Wait a moment"
+	next "and try again."
+	next "If not, contact"
+	next "our support"
+	next "center."
 	db   "@"
 
 String_17fe4b:
-	db   "まちじかんが　ながいので"
-	next "でんわが　きれました"
+	db   "Call ended due"
+	next "to long waiting"
+	next "time."
 	db   "@"
 
 String_17fe63:
-	db   "あいての　モバイルアダプタと"
-	next "タイプが　ちがいます"
-	next "くわしくは　とりあつかい"
-	next "せつめいしょを　ごらんください"
+	db   "Your adapter"
+	next "differs from other"
+	next "Mobile adapters."
+	next "For details, check"
+	next "the instructions."
 	db   "@"
 
 String_17fe9a: ; unused
+; Cannot send your save data because Pokémon News is being updated.
+; Please send your save data after loading new Pokémon News.
 	db   "ポケモンニュースが"
 	next "あたらしくなっているので"
 	next "レポートを　おくれません"
@@ -5082,11 +5092,12 @@ String_17fe9a: ; unused
 	db   "@"
 
 String_17fedf:
-	db   "つうしんの　じょうきょうが"
-	next "よくないか　かけるあいてが"
-	next "まちがっています"
-	next "もういちど　かくにんをして"
-	next "でんわを　かけなおして　ください"
+	db   "Either bad"
+	next "communication or"
+	next "the other user"
+	next "called was incorrect."
+	next "Please confirm and"
+	next "Try again."
 	db   "@"
 
 Function17ff23:
